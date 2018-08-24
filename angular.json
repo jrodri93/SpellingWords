@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/SpellingWordsApp",
+            "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,12 +50,22 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "SpellingWordsApp:build"
+            "browserTarget": "SpellingWordsApp:build",
+            "port": 4200,
+            "host": "192.168.1.109"
           },
           "configurations": {
             "production": {
               "browserTarget": "SpellingWordsApp:build:production"
             }
+          }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/server",
+            "main": "src/server.main.ts",
+            "tsConfig": "src/tsconfig.server.json"
           }
         },
         "extract-i18n": {
