@@ -33,8 +33,8 @@ var options = {
   url: 'https://od-api.oxforddictionaries.com:443/api/v1/entries/en/swimming',
   headers: {
     'Accept': 'application/json',
-    'app_id': '65d52c44',
-    'app_key': '54905a1f63103edee2b0970163acf108'
+    'app_id': '',
+    'app_key': ''
   }
 }
 
